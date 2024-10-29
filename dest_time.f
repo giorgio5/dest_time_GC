@@ -37,7 +37,7 @@ c                         1   2   3   4   5   6   7
   1     format (a8,a12,f6.2,a12,f4.2,a12,f3.2,a12,f4.2,a12,f5.2) 
   2     format (f6.2,a4,f4.2) 
   3     format (f6.2)     
-  4   format (f6.2,a4,f18.2)      
+  4     format (f6.2,a4,f18.2)      
   
 c     read from file name cluster and other parametrers proper of the 
 c     cluster itself
@@ -87,9 +87,9 @@ c    because in ascii table numbers start from 48
       open (unit=i_u, file=namefile,status='new', action='write')
       m_test = m_test_sm(i_m)*sm
       
-      write(i_u,*)
-      write(i_u,*) "for mass star test (sm) =", m_test_sm(i_m) 
-      write(i_u,*)
+      write(i_u,*) "#"
+      write(i_u,*) "# for mass star test (sm) =", m_test_sm(i_m) 
+      write(i_u,*) "#"
    
 c in order to the article of F. Selsis et al. 2007 the orbital radius
 c changes with the mass of the star test
@@ -113,13 +113,13 @@ c calculus of time of destabilization for core radius
       focusg  = (dest**2 + (ggg * m_test *dest)/s_quad)
       time = 1/(4*sqrt(pi)*s*d_core*focusg) 
       time_yr = time/yr 
-      write(i_u,*)
-      write(i_u,*) "for core radius calculus of time in year"
-      write(i_u,*)
-      write(i_u,fmt =4) r_cm/pc,'    ', time_yr
-      write(i_u,*)
-      write(i_u,*) "for generic radii"
-      write(i_u,*)
+      write(i_u,*) "#"
+      write(i_u,*) "# for core radius calculus of time in year"
+      write(i_u,*) "#"
+      write(i_u,*) "#", time_yr
+      write(i_u,*) "#"
+      write(i_u,*) "# for generic radii"
+      write(i_u,*) "#  radius(pc) time (year)"
       
 c calculus of the time of destabilization of an orbital planet traiectory
 c from the data presents on the online database 

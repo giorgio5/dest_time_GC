@@ -1,13 +1,13 @@
-
- for mass star test (sm) =  0.10000000149011612     
-
-
- for core radius calculus of time in year
-
-  0.00      4451731567929.44
-
- for generic radii
-
+ #
+ # for mass star test (sm) =  0.10000000149011612     
+ #
+ #
+ # for core radius calculus of time in year
+ #
+ #   4451731567929.4395     
+ #
+ # for generic radii
+ #  radius(pc) time (year)
   0.07         1967729822.64
   0.09         2462688415.34
   0.18        11419525318.03
