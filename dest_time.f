@@ -84,7 +84,7 @@ c    because in ascii table numbers start from 48
       
       namefile= 'profile_'//namecluster//'_'//string1//'.ris'
       
-      open (unit=i_u, file=namefile,status='new', action='write')
+      open (unit=i_u, file=namefile,status='replace', action='write')
       m_test = m_test_sm(i_m)*sm
       
       write(i_u,*) "#"
@@ -118,7 +118,7 @@ c calculus of time of destabilization for core radius
       write(i_u,*) "#"
       write(i_u,*) "#", time_yr
       write(i_u,*) "#"
-      write(i_u,*) "# for generic radii"
+      write(i_u,*) "#  for generic radii"
       write(i_u,*) "#  radius(pc) time (year)"
       
 c calculus of the time of destabilization of an orbital planet traiectory
